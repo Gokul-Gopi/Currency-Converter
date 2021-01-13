@@ -26,12 +26,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 700px; */
     border: 3px solid var(--primary-color);
     border-radius: 20px;
-    /* box-shadow: 2px 2px 5px var(--primary-color); */
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 2.1rem 2.2rem;
+    padding:2.2rem 3.2rem;
 }
 
 
@@ -146,5 +144,18 @@ button:focus{
         max-width: 350px;
     }
 
+    .container{
+        width: 75%;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    input{
+        width: 50%;
+    }
+
+    
 }
 
