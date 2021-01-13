@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/CSS/all.min.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <i class="fas fa-comment-dollar"></i>
+            <h1>Currency Converter</h1>
+        </header>
+
+        <div class="rate">1 USD = 73 INR</div>
+
+        <section>
+            <div class="country-field country-A">
+                <select class="currency-A-select">
+                    <option value="INR">INR</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AFN">AFN</option>
+                    <option value="EGP">EGP</option>
+                    <option value="KWD">KWD</option>
+                    <option value="YER">YER</option>
+                    <option value="MYR">MYR</option>
+                </select>
+                <input type="number" class="currency-converted currency-A" value="0">
+            </div>
+
+            <hr>
+
+            <div class="country-field country-B">
+                <select class="currency-B-select">
+                    <option value="INR" selected>INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AFN">AFN</option>
+                    <option value="EGP">EGP</option>
+                    <option value="KWD">KWD</option>
+                    <option value="YER">YER</option>
+                    <option value="MYR">MYR</option>
+                </select>
+                <input type="number" class="currency-converted currency-B" value="0">
+            </div>
+
+            <button class="swap-btn"><i class="fas fa-sync-alt"></i>&nbsp; Swap</button>
+
+        </section>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>

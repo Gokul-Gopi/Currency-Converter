@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+:root{
+    --primary-color:#34D399;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{   
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('images/money-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 700px; */
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    /* box-shadow: 2px 2px 5px var(--primary-color); */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2.1rem 2.2rem;
+}
+
+
+/*--------------------------------------HEADER SECTION---------------------------------------*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+header i{
+    font-size: 43px;
+}
+
+header h1{
+    font-size: 45px;
+    margin: 10px; 
+}
+
+.rate{
+    color: white;
+    margin-bottom: 40px;
+    width: 50%;
+    text-align: center;
+    visibility: hidden;
+}
+
+/*--------------------------------------EXCHANGE RATE SECTION---------------------------------------*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country-A{
+    margin-bottom: 40px;
+}
+
+.country-B{
+    margin-top: 40px;
+}
+
+input{
+    font-size: 50px;
+    color: var(--primary-color);
+    text-align: right;
+    background: transparent;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+select{
+    font-weight: 700;
+    height: 30px;
+    width: 60px;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 2px;
+    background:  linear-gradient(to bottom, #ffffff 0%,#959494  100%);
+}
+
+select:focus{
+    outline: none;
+}
+
+hr{
+    width: 75%;
+}
+
+button{
+    height: 45px;
+    width: 70%;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 65px 0px 40px 0px;
+    background:  black;
+    border: 1px solid white;
+    color: var(--primary-color);
+}
+
+button:hover{
+    cursor: pointer;
+    background: rgba(0,0,0, 0.5);
+    color: white;
+    border: 1px solid var(--primary-color) ;
+    border-radius: 5px;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+/*-----------MEDIA QUERIES-----------*/
+@media all and (max-width: 400px) {
+    .container, header, section{
+        max-width: 350px;
+    }
+
+}
+
